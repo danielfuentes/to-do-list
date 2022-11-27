@@ -19,7 +19,7 @@
   <li>Daniel Fuentes - dfuentes@gmail.com - Isdi2022* </li>
 </ul>
 
-<h5>Estos son sólo usuarios de prueba,tu perfectamente por medio de la aplicación podrás crear tus propios usuarios </h5>
+<h5>Estos son sólo usuarios de prueba, tu perfectamente por medio de la aplicación podrás crear tus propios usuarios </h5>
 <hr>
 <br>
 <img  src='https://adanielf.files.wordpress.com/2020/04/frase-daniel-fuentes.jpg' alt='Frase Ángel Daniel Fuentes Segura'>
