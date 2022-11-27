@@ -1,0 +1,40 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "To-Do-List",
+  "main": "app.js",
+  "scripts": {
+    "test": "clear && nodemon app.js -e ejs,json,js,css",
+    "db-i": "sequelize init",
+    "db-mg": "sequelize migration:generate --name task ",
+    "db-sg": "sequelize seed:generate --name task ",
+    "db": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielfuentes/to-do-list.git"
+  },
+  "keywords": [],
+  "author": "MSc. Angel Daniel Fuentes Segura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielfuentes/to-do-list.git/issues"
+  },
+  "homepage": "https://github.com/danielfuentes/to-do-list.git#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.8",
+    "sequelize-cli": "^6.5.2"
+  }
+}

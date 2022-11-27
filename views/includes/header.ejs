@@ -1,0 +1,20 @@
+<header>
+  <figure id="figure">
+    <img src="/img/logo-isdi-coders.png" alt="Logo ISDI Coders">
+  </figure>
+  
+  <h1>To Do List</h1>
+  <nav>
+    <% if (user && user.isAdmin) { %>
+    <a href="/tasks">list</a>
+    <a href="/tasks/new">new</a>
+    <a href="/logout">logout</a>
+    <% } else if (user) { %>
+    <a href="/tasks">list</a>
+    <a href="/logout">logout</a>
+    <% } else { %>
+    <a href="/">login</a>
+    <a href="/register">sign up</a>
+    <% } %>
+  </nav>
+</header>

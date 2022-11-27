@@ -1,0 +1,14 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../controllers/task.controllers");
+const { index, create, storage, change, edit, update, remove } = controller;
+let task = require("../validations/task");
+const isAdmin = require("../middlewares/isAdmin");
+router.get("/", index);
+router.get("/new", [isAdmin], create);
+router.post("/storage", [task], storage);
+router.post("/edit", edit);
+router.put("/change", change);
+router.put("/update", [task], update);
+router.delete("/remove", remove);
+module.exports = router;
